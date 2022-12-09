@@ -55,44 +55,45 @@
     </header>
 
 
-    <main class="mb-auto w-auto">
-        <h1 class="text-2xl border-2 mt-4 ml-4 mb-4 font-bold uppercase">Contact us</h1>
-        <div class="grid grid-rows-3 grid-flow-col">
-            <section>
-                <div class="row-span-3 border-2">
-                    <div class="">
-                        <img src="img/office.jpg" alt="Ankadmin Office" width="350" height="350">
-                    </div>
+    <main class="mb-auto w-auto m-2">
+        <h1 class="text-2xl border-2 font-bold uppercase">Contact us</h1>
+        <div
+            class="mt-4 mb-4 grid xs:grid-rows-4 md:grid-rows-1 md:grid-cols-2 xs:grid-cols-1 xs:justify-center gap-x-4">
+            <section class="grid md:grid-cols-4 xs:grid-cols-2 justify-center">
+                <div class="border-2 col-start-3 col-span-2 items-center">
+
+                    <img class="p-2 col-start-2 col-span-2" src="img/office.jpg" alt="Ankadmin Office" width="450"
+                        height="450">
 
                     <div class="mt-2 mb-2 border-2">
                         <div class="flex gap-x-2">
-                            <img src="img/map-marker.png" alt="Ankadmin Office" width="20" height="20">
-                            <p>Tomtebodavägen 3A, 171 65 Solna</p>
+                            <img src="img/map-marker.png" alt="Ankadmin Office" width="20" height="20" class="inline">
+                            <p class="inline">Tomtebodavägen 3A, 171 65 Solna</p>
                         </div>
 
-                        <div class="flex gap-x-2">
-                            <img src="img/clock.png" alt="Ankadmin Office" width="20" height="20">
-                            <p class="font-bold">Opening Hours</p>
+                        <div class="gap-x-2">
+                            <img src="img/clock.png" alt="Ankadmin Office" width="20" height="20" class="inline">
+                            <p class="font-bold inline">Opening Hours</p>
+                        </div>
+                        <div>
                             <p>Monday-Friday 9.30 am - 6.00 pm <br>
                                 Saturday 9.30 am - 2.00/4.00 pm</p>
                         </div>
 
-                        <div class="flex gap-x-2">
-                            <img src="img/phone.png" alt="Ankadmin Office" width="20" height="20">
-                            <p>08-466 60 00</p>
+                        <div class="gap-x-2">
+                            <img src="img/phone.png" alt="Ankadmin Office" width="20" height="20" class="inline">
+                            <p class="inline">08-466 60 00</p>
                         </div>
-
-
                     </div>
                 </div>
             </section>
 
-            <section>
-                <div class="row-span-3 border-2">
-                    <p class="">Got a technical issue? Want to send feedback about a beta feature? Need details about
+            <section class="grid md:grid-cols-4 xs:grid-cols-2">
+                <div class="border-2 border-orange-500 rounded-lg col-start-1 col-span-2">
+                    <p class="m-2">Got a technical issue? Want to send feedback about a beta feature? Need details about
                         our Business
                         plan? Let us know.</p>
-                    <form action="#" class="space-y-4 border-2 m-2 ">
+                    <form action="#" class="border-2 m-2 ">
 
                         <div>
                             <label for="email" class="block mb-1 text-m font-medium text-black">Name</label>
@@ -139,22 +140,18 @@
                             <textarea id="message" rows="4"
                                 class="block p-2.5 w-full text-sm text-gray-900 bg-yellow-300 rounded-lg border border-black"
                                 placeholder="Write your thoughts here..."></textarea>
-
-                            <button type="button" onclick="location.href='http://www.google.com'"
-                                class="inline-block p-2 bg-black text-yellow-500 font-medium border-2 border-black text-xs uppercase rounded hover:bg-white hover:border-orange-500 hover:shadow-lg focus:bg-white focus:shadow-lg focus:outline-none focus:ring-0 active:bg-white active:shadow-lg transition duration-150 ease-in-out">
-                                submit
-                            </button>
+                            <div class="pt-2 flex justify-end">
+                                <button type="button" onclick="location.href='http://www.google.com'"
+                                    class="inline-block p-2 bg-orange-500 text-black font-medium border-2 border-black text-xs uppercase rounded hover:text-yellow-400 hover:bg-black hover:border-orange-500 hover:shadow-lg focus:bg-white focus:shadow-lg focus:outline-none focus:ring-0 active:bg-white active:shadow-lg transition duration-150 ease-in-out">
+                                    submit
+                                </button>
+                            </div>
 
                         </div>
-
-
-
-
                     </form>
-
                 </div>
+            </section>
         </div>
-        </section>
     </main>
 
 
