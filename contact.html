@@ -5,18 +5,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Average&family=Enriqueta&family=Jua&family=Londrina+Solid&display=swap"
+        rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Contact us</title>
 </head>
 
 <body class="flex flex-col h-screen justify-between">
     <header>
-        <div class="grid bg-yellow-400 text-center justify-center items-center">
-            <img src="img/logo_2.png" alt="Ankadmin Logo" width="125" height="125">
+        <div class="flex justify-center">
+            <img src="img/logo3.png" alt="Ankadmin Logo" width="125" height="125">
         </div>
-        <div class="bg-yellow-400 grid grid-cols-2 grid-rows-1">
-            <div class="border-2 dropdown grid-cols-1 grid-rows-1">
+        <div class="flex justify-center">
+            <h1 class="text-2xl font-bold mb-4">contact us</h1>
+        </div>
+        <nav class="grid grid-cols-2 grid-rows-1 mb-4">
+            <div class="dropdown grid-cols-1 grid-rows-1 ml-4">
                 <button
                     class="p-2 bg-white text-black font-medium border-2 border-black text-xs uppercase rounded hover:bg-orange-500 hover:shadow-lg focus:bg-white focus:shadow-lg focus:outline-none focus:ring-0 active:bg-white active:shadow-lg transition duration-150 ease-in-out">Menu</button>
                 <div class="dropdown-content">
@@ -27,8 +35,9 @@
                     <a href="#">Contact us</a>
                 </div>
             </div>
-            <div class="border-2 flex justify-end gap-x-4">
-                <div class="flex items-center">
+
+            <div class="flex justify-end gap-x-4 mr-4 items-center">
+                <div>
                     <a class="text-black hover:text-orange-500 focus:text-orange-500" href="#">
                         <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="shopping-cart"
                             class="w-7" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
@@ -51,21 +60,21 @@
                     </button>
                 </div>
             </div>
-        </div>
+        </nav>
     </header>
 
 
+
     <main class="mb-auto w-auto m-2">
-        <h1 class="text-2xl border-2 font-bold uppercase">Contact us</h1>
-        <div
-            class="mt-4 mb-4 grid xs:grid-rows-4 md:grid-rows-1 md:grid-cols-2 xs:grid-cols-1 xs:justify-center gap-x-4">
-            <section class="grid md:grid-cols-4 xs:grid-cols-2 justify-center">
-                <div class="border-2 col-start-3 col-span-2 items-center">
+        <h1 class="text-2xl font-bold uppercase">Contact us</h1>
+        <div class="mt-4 mb-4 contentGrid">
+            <section class="grid md:grid-cols-4 justify-center">
+                <div class="col-start-2 col-span-3 items-center">
 
                     <img class="p-2 col-start-2 col-span-2" src="img/office.jpg" alt="Ankadmin Office" width="450"
                         height="450">
 
-                    <div class="mt-2 mb-2 border-2">
+                    <div class="mt-2 mb-2">
                         <div class="flex gap-x-2">
                             <img src="img/map-marker.png" alt="Ankadmin Office" width="20" height="20" class="inline">
                             <p class="inline">Tomtebodavägen 3A, 171 65 Solna</p>
@@ -88,12 +97,12 @@
                 </div>
             </section>
 
-            <section class="grid md:grid-cols-4 xs:grid-cols-2">
-                <div class="border-2 border-orange-500 rounded-lg col-start-1 col-span-2">
+            <section class="grid md:grid-cols-4">
+                <div class="border-2 border-orange-500 rounded-lg col-start-1 col-span-3">
                     <p class="m-2">Got a technical issue? Want to send feedback about a beta feature? Need details about
                         our Business
                         plan? Let us know.</p>
-                    <form action="#" class="border-2 m-2 ">
+                    <form action="#" class="m-2 ">
 
                         <div>
                             <label for="email" class="block mb-1 text-m font-medium text-black">Name</label>
@@ -157,8 +166,8 @@
 
     <footer class="bg-yellow-400 w-auto grid mt-auto">
         <div class="p-2 flex gap-x-2">
-            <img class="flex-frow-1" src="img/logo_2.png" alt="Ankadmin Logo" width="125" height="125">
-            <ul class="flex-grow-1 border-2">
+            <img src="img/logo3.png" alt="Ankadmin Logo" width="125" height="125">
+            <ul class="flex-grow-1">
                 <li> <a href=" #">Home</a>
                 </li>
                 <li> <a href=" #">Courses</a>
@@ -171,9 +180,9 @@
                 </li>
             </ul>
 
-            <div class="flex-grow grid border-2 justify-items-end">
-                <div class="flex grid border-2 justify-items-center">
-                    <div class="flex flex-end border-2 items-end ">
+            <div class="flex-grow grid justify-items-end">
+                <div class="flex grid justify-items-center">
+                    <div class="flex flex-end items-end ">
                         <a href="#!" class="mr-3 text-gray-800">
                             <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f"
                                 class="svg-inline--fa fa-facebook-f w-2.5" role="img" xmlns="http://www.w3.org/2000/svg"
@@ -217,7 +226,7 @@
                     </div>
                 </div>
 
-                <div class="flex border-2 items-end">
+                <div class="flex items-end">
 
                     <p class="text-xs">© 2022 Ankademin, Inc.</p>
                 </div>

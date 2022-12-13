@@ -5,18 +5,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Average&family=Enriqueta&family=Jua&family=Londrina+Solid&display=swap"
+        rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Ankademin</title>
 </head>
 
-<body class="flex flex-col h-screen justify-between">
+<body class="h-screen">
     <header>
-        <div class="grid bg-yellow-400 text-center justify-center items-center">
+        <div class="flex justify-center">
             <img src="img/logo3.png" alt="Ankadmin Logo" width="125" height="125">
         </div>
-        <div class="bg-yellow-400 grid grid-cols-2 grid-rows-1">
-            <div class="dropdown grid-cols-1 grid-rows-1 ml-4 m-4">
+        <div class="flex justify-center">
+            <h1 class="text-2xl font-bold mb-4">Home</h1>
+        </div>
+        <nav class="grid grid-cols-2 grid-rows-1 mb-4">
+            <div class="dropdown grid-cols-1 grid-rows-1 ml-4">
                 <button
                     class="p-2 bg-white text-black font-medium border-2 border-black text-xs uppercase rounded hover:bg-orange-500 hover:shadow-lg focus:bg-white focus:shadow-lg focus:outline-none focus:ring-0 active:bg-white active:shadow-lg transition duration-150 ease-in-out">Menu</button>
                 <div class="dropdown-content">
@@ -27,6 +35,7 @@
                     <a href="#">Contact us</a>
                 </div>
             </div>
+
             <div class="flex justify-end gap-x-4 mr-4 items-center">
                 <div>
                     <a class="text-black hover:text-orange-500 focus:text-orange-500" href="#">
@@ -51,16 +60,16 @@
                     </button>
                 </div>
             </div>
-        </div>
+        </nav>
+
     </header>
 
 
     <main class="mb-auto w-auto m-4">
-        <h1 class="text-2xl font-bold uppercase mb-4">Home</h1>
-
-        <div class="border-2 border-orange-500 rounded-lg grid xs:grid-cols-1 md:grid-cols-2 bg-yellow-100">
-            <article class="m-3">
-                <div>
+        <h1 class="text-2xl mt-4 ml-4 mb-4 font-bold uppercase">Home</h1>
+        <div class="contentGrid content">
+            <article>
+                <div class="ml-3">
                     <h2 class="text-xl font-semibold uppercase mb-3">WELCOME TO ANKADEMIN, the best online
                         video
                         courses on earth!
@@ -83,7 +92,7 @@
                 </div>
             </article>
 
-            <div class="m-3">
+            <div>
                 <video class="w-full h-80" autoplay muted controls>
                     <source src="img/video.mp4" type="video/mp4">
                     Your browser does not support the video tag.
@@ -91,23 +100,22 @@
             </div>
         </div>
 
-        <div class="grid mt-6 xs:grid-cols-1 md:grid-cols-2 mb-4 gap-4">
-            <div class="border-2 border-2 border-orange-500 rounded-lg pb-3 pt-3 bg-yellow-100">
+        <div class="contentGrid mt-6 mb-4">
+            <article class="content">
                 <div>
-                    <h2 class="text-xl font-semibold uppercase mb-3 ml-3">student are viewning</h2>
+                    <h2 class="text-xl font-semibold uppercase mb-3 ml-3">student are viewing</h2>
                 </div>
                 <div class="grid md:grid-cols-2 xs:grid-cols-1">
-                    <!-- Sell-->
                     <div>
-                        <div class="m-4 bg-white">
-                            <div
-                                class="border-2 grid grid-cols-1 justify-items-center border-orange-500 rounded-lg pb-3 pt-3">
+                        <div class="m-4">
+                            <div class="border-2 grid grid-cols-1 justify-items-center insideContent">
                                 <div>
-                                    <img src="img/htmlcss.png" alt="html and css" width="150" height="150">
+                                    <img src="img/htmlcss.jpg" alt="html and css" width="150" height="150">
                                 </div>
                                 <div class="grid grid-cols-1 justify-items-center">
-                                    <h4 class="text-m font-semibold mb-2">HTML & CSS Zero to Hero</h4>
-                                    <p class="text-s italic">Jonas Morris</p>
+                                    <h4 class="text-m font-semibold mb-2 text-center">Learn HTML5 and CSS3 From Scratch
+                                    </h4>
+                                    <p class="text-s italic">freeCodeCamp.org</p>
 
                                     <div class="flex">
                                         <svg aria-hidden="true" class="w-5 h-5 text-yellow-400" fill="currentColor"
@@ -146,14 +154,9 @@
                                             </path>
                                         </svg>
                                         <p class="text-xs ml-2">4.5 (12,643)</p>
-
-
                                     </div>
-
                                     <p class="text-center">899 kr</p>
-
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -161,15 +164,15 @@
 
                     <!-- Sell2-->
                     <div>
-                        <div class="m-4 bg-white">
-                            <div
-                                class="border-2 grid grid-cols-1 justify-items-center border-orange-500 rounded-lg pb-3 pt-3">
+                        <div class="m-4">
+                            <div class="border-2 grid grid-cols-1 justify-items-center insideContent">
                                 <div>
-                                    <img src="img/JavaScript_logo_PNG1.png" alt="javascript" width="150" height="150">
+                                    <img src="img/js.jpg" alt="javascript" width="150" height="150">
                                 </div>
                                 <div class="grid grid-cols-1 justify-items-center">
-                                    <h4 class="text-m font-semibold mb-2">The Complete JavaScript Course</h4>
-                                    <p class="text-s italic">Jean-Sébastien D.</p>
+                                    <h4 class="text-m font-semibold mb-2 text-center">JavaScript Programming - Full
+                                        Course</h4>
+                                    <p class="text-s italic">freeCodeCamp.org</p>
 
                                     <div class="flex">
                                         <svg aria-hidden="true" class="w-5 h-5 text-yellow-400" fill="currentColor"
@@ -224,14 +227,13 @@
                 <div class="grid grid-cols-1 text-center">
                     <a href="#" class="text-blue-700">Explore our courses...</a>
                 </div>
-            </div>
-            <div class="border-2 border-2 border-orange-500 rounded-lg pb-3 pt-3 bg-yellow-100">
+            </article>
+            <article class="content">
                 <h2 class="text-xl font-semibold uppercase mb-3 ml-3">student reviews</h2>
-                <div class="grid grid-rows-2gap-4">
+                <div class="grid grid-rows-2 gap-4">
                     <div class="row-span-2">
                         <article>
-                            <article
-                                class="row-span-2 col-span-2 border-2 border-orange-500 rounded-lg p-2 m-3 bg-white">
+                            <article class="row-span-2 col-span-2 insideContent">
                                 <div class="flex items-center mb-4 space-x-4">
                                     <img class="w-10 h-10 rounded-full" src="img/review2.jpg" alt="">
                                     <div class="space-y-1 font-medium">
@@ -283,8 +285,7 @@
                 <div class="grid grid-rows-2 gap-4">
                     <div class="row-span-2">
                         <article>
-                            <article
-                                class="row-span-2 col-span-2 border-2 border-orange-500 rounded-lg p-2 m-3 bg-white">
+                            <article class="row-span-2 col-span-2 insideContent">
                                 <div class="flex items-center mb-4 space-x-4">
                                     <img class="w-10 h-10 rounded-full" src="img/review1.jpg" alt="">
                                     <div class="space-y-1 font-medium">
@@ -340,7 +341,7 @@
                 <div class="grid grid-cols-1 text-end mb-3">
                     <a href="#" class="text-blue-700">Read more...</a>
                 </div>
-            </div>
+            </article>
         </div>
 
     </main>

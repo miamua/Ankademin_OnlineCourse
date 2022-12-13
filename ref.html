@@ -5,18 +5,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Average&family=Enriqueta&family=Jua&family=Londrina+Solid&display=swap"
+        rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
     <title>References</title>
 </head>
 
 <body class="flex flex-col h-screen justify-between">
     <header>
-        <div class="grid bg-yellow-400 text-center justify-center items-center">
-            <img src="img/logo_2.png" alt="Ankadmin Logo" width="125" height="125">
+        <div class="flex justify-center">
+            <img src="img/logo3.png" alt="Ankadmin Logo" width="125" height="125">
         </div>
-        <div class="bg-yellow-400 grid grid-cols-2 grid-rows-1">
-            <div class="border-2 dropdown grid-cols-1 grid-rows-1">
+        <div class="flex justify-center">
+            <h1 class="text-2xl font-bold mb-4">References</h1>
+        </div>
+        <nav class="grid grid-cols-2 grid-rows-1 mb-4">
+            <div class="dropdown grid-cols-1 grid-rows-1 ml-4">
                 <button
                     class="p-2 bg-white text-black font-medium border-2 border-black text-xs uppercase rounded hover:bg-orange-500 hover:shadow-lg focus:bg-white focus:shadow-lg focus:outline-none focus:ring-0 active:bg-white active:shadow-lg transition duration-150 ease-in-out">Menu</button>
                 <div class="dropdown-content">
@@ -27,8 +35,9 @@
                     <a href="#">Contact us</a>
                 </div>
             </div>
-            <div class="border-2 flex justify-end gap-x-4">
-                <div class="flex items-center">
+
+            <div class="flex justify-end gap-x-4 mr-4 items-center">
+                <div>
                     <a class="text-black hover:text-orange-500 focus:text-orange-500" href="#">
                         <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="shopping-cart"
                             class="w-7" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
@@ -51,14 +60,15 @@
                     </button>
                 </div>
             </div>
-        </div>
+        </nav>
+
     </header>
 
     <main class="mb-auto w-auto">
-        <h1 class="text-2xl border-2 mt-4 ml-4 mb-4 font-bold uppercase">References</h1>
-        <div class="border-2 m-2 grid md:grid-cols-2 sm:grid-cols-1 gap-x-4">
+        <h1 class="text-2xl mt-4 ml-4 mb-4 font-bold uppercase">References</h1>
+        <div class="contentGrid">
 
-            <article class="border-2 border-orange-500 rounded p-2 m-2">
+            <article class="insideContent m-2">
                 <div class="flex items-center mb-4 space-x-4">
                     <img class="w-10 h-10 rounded-full" src="img/review1.jpg" alt="">
                     <div class="space-y-1 font-medium">
@@ -105,11 +115,8 @@
                     </svg>
                 </div>
 
-                <p class="mb-2 font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Accusantium tenetur voluptatibus illo velit omnis consequatur numquam fugiat dolores, officia, quasi
-                    impedit ea aperiam quia. Delectus ipsa dignissimos eligendi nobis cum quidem odio, qui suscipit
-                    illum sed dolores reprehenderit earum culpa error unde deserunt, nostrum hic enim, repellendus
-                    nesciunt consequuntur modi.</p>
+                <p class="mb-2 font-light">Excelent platform and a good source of learning and information.
+                    I've studied several IT courses on Ankademin, it's a good setup and learning platform.</p>
 
                 <aside>
                     <p class="mt-1 text-xs text-gray-500">19 people found this helpful</p>
@@ -124,7 +131,7 @@
             </article>
 
 
-            <article class="border-2 border-orange-500 rounded p-2 m-2">
+            <article class="insideContent m-2">
                 <div class="flex items-center mb-4 space-x-4">
                     <img class="w-10 h-10 rounded-full" src="img/review2.jpg" alt="">
                     <div class="space-y-1 font-medium">
@@ -165,10 +172,10 @@
 
                 </div>
 
-                <p class="mb-2 font-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos quia iste
-                    aspernatur temporibus dolores nulla obcaecati perferendis consequatur vel quo amet, itaque, cum,
-                    suscipit et omnis eveniet architecto sint! Recusandae, nulla magnam architecto id molestiae atque et
-                    quisquam sapiente labore!</p>
+                <p class="mb-2 font-light">I have completed a few specific courses and I am very satisfied with the
+                    teachers and content. I have not encountered any problems so far. You get what you pay for. If you
+                    want college credit, go to a local college. My main reason for enrolling is to further my own
+                    knowledge.</p>
 
                 <aside>
                     <p class="mt-1 text-xs text-gray-500">5 people found this helpful</p>
@@ -182,7 +189,7 @@
                 </aside>
             </article>
 
-            <article class="border-2 border-orange-500 rounded p-2 m-2">
+            <article class="insideContent m-2">
                 <div class="flex items-center mb-4 space-x-4">
                     <img class="w-10 h-10 rounded-full" src="img/review3.jpg" alt="">
                     <div class="space-y-1 font-medium">
@@ -229,9 +236,8 @@
                     </svg>
                 </div>
 
-                <p class="mb-2 font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero aliquam,
-                    voluptatum provident delectus soluta a error optio, odit illo explicabo ipsam iure qui perferendis
-                    dolore? Vitae quos enim earum quae.</p>
+                <p class="mb-2 font-light">Ankademin is really good and the way they explained all techniques was
+                    really clear and understanding, I recommend it!!!</p>
 
                 <aside>
                     <p class="mt-1 text-xs text-gray-500">3 people found this helpful</p>
@@ -245,7 +251,7 @@
                 </aside>
             </article>
 
-            <article class="border-2 border-orange-500 rounded p-2 m-2">
+            <article class="insideContent m-2">
                 <div class="flex items-center mb-4 space-x-4">
                     <img class="w-10 h-10 rounded-full" src="img/review4.jpg" alt="">
                     <div class="space-y-1 font-medium">
@@ -278,8 +284,8 @@
                     </svg>
                 </div>
 
-                <p class="mb-2 font-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi adipisci qui
-                    quod architecto minus voluptatibus neque suscipit, labore perspiciatis ut.</p>
+                <p class="mb-2 font-light">Good courses, not the best for specific subjects but overall are well
+                    organized. 2 stars less for the permanent promotion, it is an annoying strategy.</p>
 
                 <aside>
                     <p class="mt-1 text-xs text-gray-500">37 people found this helpful</p>
@@ -293,11 +299,11 @@
                 </aside>
             </article>
 
-            <article class="border-2 border-orange-500 rounded p-2 m-2">
+            <article class="insideContent m-2">
                 <div class="flex items-center mb-4 space-x-4">
                     <img class="w-10 h-10 rounded-full" src="img/review5.jpg" alt="">
                     <div class="space-y-1 font-medium">
-                        <p>Brad Pitt
+                        <p>Tom Cruise
                             <time class="block text-sm text-gray-500 dark:text-gray-400">Joined on September 2020</time>
                         </p>
                     </div>
@@ -326,8 +332,10 @@
                     </svg>
                 </div>
 
-                <p class="mb-2 font-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi adipisci qui
-                    quod architecto minus voluptatibus neque suscipit, labore perspiciatis ut.</p>
+                <p class="mb-2 font-light">I have bought a couple of courses from Ankademin. They are great for getting
+                    general knowledge on a subject relatively quickly in a structured manner. If you want to get more
+                    in-depth knowledge though, I wouldn't recommend. The business model doesn't encourage really
+                    in-depth content, in my opinion.</p>
 
                 <aside>
                     <p class="mt-1 text-xs text-gray-500">37 people found this helpful</p>
@@ -341,12 +349,12 @@
                 </aside>
             </article>
 
-            <article class="border-2 border-orange-500 rounded p-2 m-2">
+            <article class="insideContent m-2">
                 <div class="flex items-center mb-4 space-x-4">
                     <img class="w-10 h-10 rounded-full" src="img/review6.jpg" alt="">
                     <div class="space-y-1 font-medium">
-                        <p>Brad Pitt
-                            <time class="block text-sm text-gray-500 dark:text-gray-400">Joined on September 2020</time>
+                        <p>Charles Darwin
+                            <time class="block text-sm text-gray-500 dark:text-gray-400">Joined on September 2022</time>
                         </p>
                     </div>
                 </div>
@@ -358,27 +366,14 @@
                             d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
                         </path>
                     </svg>
-                    <svg aria-hidden="true" class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <title>Second star</title>
-                        <path
-                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                        </path>
-                    </svg>
-                    <svg aria-hidden="true" class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <title>Third star</title>
-                        <path
-                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                        </path>
-                    </svg>
+
                 </div>
 
-                <p class="mb-2 font-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi adipisci qui
-                    quod architecto minus voluptatibus neque suscipit, labore perspiciatis ut.</p>
+                <p class="mb-2 font-light">Their refund policy sucks! If you request your refund it will be directed to
+                    Ankademin Credit and not on your original payment method.</p>
 
                 <aside>
-                    <p class="mt-1 text-xs text-gray-500">37 people found this helpful</p>
+                    <p class="mt-1 text-xs text-gray-500">98 people found this helpful</p>
                     <div class="flex items-center mt-3 space-x-3 divide-x divide-gray-200 dark:divide-gray-600">
                         <a href="#"
                             class="text-gray-900 bg-white border border-orange-500 focus:outline-none hover:bg-yellow-300 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-xs px-2 py-1.5">Helpful</a>
@@ -388,17 +383,14 @@
                     </div>
                 </aside>
             </article>
-
-
-
 
         </div>
     </main>
 
     <footer class="bg-yellow-400 w-auto grid mt-auto">
         <div class="p-2 flex gap-x-2">
-            <img class="flex-frow-1" src="img/logo_2.png" alt="Ankadmin Logo" width="125" height="125">
-            <ul class="flex-grow-1 border-2">
+            <img src="img/logo3.png" alt="Ankadmin Logo" width="125" height="125">
+            <ul class="flex-grow-1">
                 <li> <a href=" #">Home</a>
                 </li>
                 <li> <a href=" #">Courses</a>
@@ -411,9 +403,9 @@
                 </li>
             </ul>
 
-            <div class="flex-grow grid border-2 justify-items-end">
-                <div class="flex grid border-2 justify-items-center">
-                    <div class="flex flex-end border-2 items-end ">
+            <div class="flex-grow grid justify-items-end">
+                <div class="flex grid justify-items-center">
+                    <div class="flex flex-end items-end ">
                         <a href="#!" class="mr-3 text-gray-800">
                             <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f"
                                 class="svg-inline--fa fa-facebook-f w-2.5" role="img" xmlns="http://www.w3.org/2000/svg"
@@ -457,7 +449,7 @@
                     </div>
                 </div>
 
-                <div class="flex border-2 items-end">
+                <div class="flex items-end">
 
                     <p class="text-xs">© 2022 Ankademin, Inc.</p>
                 </div>

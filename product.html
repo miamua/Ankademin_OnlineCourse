@@ -5,18 +5,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Average&family=Enriqueta&family=Jua&family=Londrina+Solid&display=swap"
+        rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Our courses</title>
 </head>
 
 <body class="flex flex-col h-screen justify-between">
     <header>
-        <div class="grid bg-yellow-400 text-center justify-center items-center">
-            <img src="img/logo_2.png" alt="Ankadmin Logo" width="125" height="125">
+        <div class="flex justify-center">
+            <img src="img/logo3.png" alt="Ankadmin Logo" width="125" height="125">
         </div>
-        <div class="bg-yellow-400 grid grid-cols-2 grid-rows-1">
-            <div class="border-2 dropdown grid-cols-1 grid-rows-1">
+        <div class="flex justify-center">
+            <h1 class="text-2xl font-bold mb-4">References</h1>
+        </div>
+        <nav class="grid grid-cols-2 grid-rows-1 mb-4">
+            <div class="dropdown grid-cols-1 grid-rows-1 ml-4">
                 <button
                     class="p-2 bg-white text-black font-medium border-2 border-black text-xs uppercase rounded hover:bg-orange-500 hover:shadow-lg focus:bg-white focus:shadow-lg focus:outline-none focus:ring-0 active:bg-white active:shadow-lg transition duration-150 ease-in-out">Menu</button>
                 <div class="dropdown-content">
@@ -27,8 +35,9 @@
                     <a href="#">Contact us</a>
                 </div>
             </div>
-            <div class="border-2 flex justify-end gap-x-4">
-                <div class="flex items-center">
+
+            <div class="flex justify-end gap-x-4 mr-4 items-center">
+                <div>
                     <a class="text-black hover:text-orange-500 focus:text-orange-500" href="#">
                         <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="shopping-cart"
                             class="w-7" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
@@ -51,22 +60,24 @@
                     </button>
                 </div>
             </div>
-        </div>
+        </nav>
     </header>
 
 
 
     <main class="mb-auto w-auto m-4">
-        <h1 class="text-2xl border-2 font-bold uppercase mb-4">Our courses</h1>
-        <div class="grid lg:grid-cols-3 gap-x-4 gap-y-4 md:grid-cols-1 mb-4">
+        <h1 class="text-2xl mt-4 ml-4 mb-4 font-bold uppercase">our courses</h1>
+        <div class="contentGrid gap-x-4 gap-y-4 mb-4">
             <div class="border rounded-lg bg-yellow-100">
                 <div class="flex m-2">
-                    <img src="img/htmlcss.png" alt="html and css" width="150" height="125">
-                    <h4 class="text-m font-semibold mb-2 ml-3">HTML & CSS Zero to Hero</h4>
+                    <img src="img/htmlcss.jpg" alt="html and css" width="150" height="125">
+                    <h4 class="text-m font-semibold mb-2 ml-3">Learn HTML5 and CSS3 From Scratch - Full Course</h4>
                 </div>
                 <div class="m-2">
-                    <p>Build modern responsive websites & UIs with HTML5, CSS3 & Sass! Learn Flex & CSS Grid.</p>
-                    <p class="text-s italic font-semibold">Jonas Morris</p>
+                    <p>HTML and CSS are essential skills to have for a career in web development. In this course we will
+                        cover both languages from the scratch and by the end of the course you will be creating your own
+                        projects.</p>
+                    <p class="text-s italic font-semibold">freeCodeCamp.org</p>
                 </div>
                 <div class="grid grid-cols-2 m-2">
                     <div>
@@ -122,13 +133,12 @@
 
             <div class="border rounded-lg bg-yellow-200">
                 <div class="flex m-2">
-                    <img src="img/JavaScript_logo_PNG1.png" alt="html and css" width="150" height="125">
-                    <h4 class="text-m font-semibold mb-2 ml-3">The Complete JavaScript Course</h4>
+                    <img src="img/js.jpg" alt="javascript" width="150" height="125">
+                    <h4 class="text-m font-semibold mb-2 ml-3">JavaScript Programming - Full Course</h4>
                 </div>
                 <div class="m-2">
-                    <p>The modern JavaScript course for everyone! Master JavaScript with projects, challenges and
-                        theory. Many courses in one!</p>
-                    <p class="text-s italic font-semibold">Jean-Sébastien D.</p>
+                    <p>Learn JavaScript from scratch by solving over a hundred different coding challenges.</p>
+                    <p class="text-s italic font-semibold">freeCodeCamp.org</p>
                 </div>
                 <div class="grid grid-cols-2 m-2">
                     <div>
@@ -185,13 +195,13 @@
 
             <div class="border rounded-lg bg-yellow-200">
                 <div class="flex m-2">
-                    <img src="img/Python-Symbol.png" alt="html and css" width="150" height="125">
-                    <h4 class="text-m font-semibold mb-2 ml-3">Complete Python Developer in 2023</h4>
+                    <img src="img/python.jpg" alt="python" width="150" height="125">
+                    <h4 class="text-m font-semibold mb-2 ml-3">Learn Python - Full Course for Beginners</h4>
                 </div>
                 <div class="m-2">
-                    <p>How to become a Python 3 Developer and get hired! Build 12+ projects, learn Web Development,
-                        Machine Learning + more!</p>
-                    <p class="text-s italic font-semibold">Maximilian E.</p>
+                    <p>This course will give you a full introduction into all of the core concepts in python. Follow
+                        along with the videos and you'll be a python programmer in no time!</p>
+                    <p class="text-s italic font-semibold">freeCodeCamp.org</p>
                 </div>
                 <div class="grid grid-cols-2 m-2">
                     <div>
@@ -248,13 +258,14 @@
 
             <div class="border rounded-lg bg-yellow-100">
                 <div class="flex m-2">
-                    <img src="img/DoKub.png" alt="html and css" width="150" height="125">
-                    <h4 class="text-m font-semibold mb-2 ml-3">Docker and Kubernetes: The Complete Guide</h4>
+                    <img src="img/docker.jpg" alt="docker" width="150" height="125">
+                    <h4 class="text-m font-semibold mb-2 ml-3">Docker Containers and Kubernetes Fundamentals</h4>
                 </div>
                 <div class="m-2">
-                    <p>Build, test, and deploy Docker applications with Kubernetes while learning production-style
-                        development workflows</p>
-                    <p class="text-s italic font-semibold">Stephen Grider</p>
+                    <p>Learn how to use Docker and Kubernetes in this complete hand-on course for
+                        beginners.
+                    </p>
+                    <p class="text-s italic font-semibold">freeCodeCamp.org</p>
                 </div>
                 <div class="grid grid-cols-2 m-2">
                     <div>
@@ -311,13 +322,15 @@
 
             <div class="border rounded-lg bg-yellow-100">
                 <div class="flex m-2">
-                    <img src="img/linux.png" alt="html and css" width="150" height="125">
-                    <h4 class="text-m font-semibold mb-2 ml-3">Linux Command Line Basics</h4>
+                    <img src="img/linux.jpg" alt="linux" width="150" height="125">
+                    <h4 class="text-m font-semibold mb-2 ml-3">Linux for Ethical Hackers</h4>
                 </div>
                 <div class="m-2">
-                    <p>This is an introductory course to the Linux command Line. It's great for both Linux beginners and
-                        advanced Linux users.</p>
-                    <p class="text-s italic font-semibold">Bandar Alghaleb</p>
+                    <p>In this course, you will learn the basics of Kali Linux. The course covers installation, using
+                        the terminal / command line, bash scripting, tools and features for ethical hacking, and more.
+                        The course focuses on Kali Linux but much of the content applies to other versions of Linux as
+                        well.</p>
+                    <p class="text-s italic font-semibold">freeCodeCamp.org</p>
                 </div>
                 <div class="grid grid-cols-2 m-2">
                     <div>
@@ -374,12 +387,14 @@
 
             <div class="border rounded-lg bg-yellow-200">
                 <div class="flex m-2">
-                    <img src="img/terraform.png" alt="html and css" width="150" height="125">
-                    <h4 class="text-m font-semibold mb-2 ml-3">Terraform for the Absolute Beginners with Labs</h4>
+                    <img src="img/git.jpg" alt="git" width="150" height="125">
+                    <h4 class="text-m font-semibold mb-2 ml-3">Git and GitHub for Beginners</h4>
                 </div>
                 <div class="m-2">
-                    <p>Learn the basics of Terraform with real hands on labs right in your browser.</p>
-                    <p class="text-s italic font-semibold">Mumshad Mannambeth</p>
+                    <p>Learn about Git and GitHub in this tutorial. These are important tools for all developers to
+                        understand. Git and GitHub make it easier to manage different software versions and make it
+                        easier for multiple people to work on the same software project.</p>
+                    <p class="text-s italic font-semibold">freeCodeCamp.org</p>
                 </div>
                 <div class="grid grid-cols-2 m-2">
                     <div>
@@ -436,14 +451,13 @@
 
             <div class="border rounded-lg bg-yellow-200">
                 <div class="flex m-2">
-                    <img src="img/react.png" alt="html and css" width="150" height="125">
-                    <h4 class="text-m font-semibold mb-2 ml-3">React - The Complete Guide (incl Hooks, React Router,
-                        Redux)</h4>
+                    <img src="img/bootstrap.jpg" alt="bootstrap" width="150" height="125">
+                    <h4 class="text-m font-semibold mb-2 ml-3">Bootstrap CSS Framework - Full Course for Beginners</h4>
                 </div>
                 <div class="m-2">
-                    <p>Dive in and learn React.js from scratch! Learn Reactjs, Hooks, Redux, React Routing, Animations,
-                        Next.js and way more!</p>
-                    <p class="text-s italic font-semibold">Maximilian Schwarzmüller</p>
+                    <p>Learn Bootstrap 5 in this full course for beginners. Bootstrap is the most popular CSS framework.
+                        It allows web developers to quickly design and customize responsive mobile-first sites.</p>
+                    <p class="text-s italic font-semibold">freeCodeCamp.org</p>
                 </div>
                 <div class="grid grid-cols-2 m-2">
                     <div>
@@ -500,14 +514,15 @@
 
             <div class="border rounded-lg bg-yellow-100">
                 <div class="flex m-2">
-                    <img src="img/aws.png" alt="html and css" width="150" height="125">
-                    <h4 class="text-m font-semibold mb-2 ml-3">Ultimate AWS Certified Solutions Architect Professional
-                        2022</h4>
+                    <img src="img/sass.jpg" alt="sass" width="150" height="125">
+                    <h4 class="text-m font-semibold mb-2 ml-3">Sass Tutorial for Beginners - CSS With Superpowers</h4>
                 </div>
                 <div class="m-2">
-                    <p>Be AWS Certified Solutions Architect Professional. Full Amazon Web Services Solution Architecture
-                        deep-dive for SAP-C02</p>
-                    <p class="text-s italic font-semibold">Stephane Maarek</p>
+                    <p>In this course, you will learn the basics of Sass. We will start with a brief overview of what
+                        Sass is along with what is required to incorporate Sass into your environment. We will also set
+                        up a Sass compiler in Visual Studio Code. You will learn about Sass variables, maps, nesting,
+                        functions, mixins, extending, and operations.</p>
+                    <p class="text-s italic font-semibold">freeCodeCamp.org</p>
                 </div>
                 <div class="grid grid-cols-2 m-2">
                     <div>
@@ -585,8 +600,8 @@
 
     <footer class="bg-yellow-400 w-auto grid mt-auto">
         <div class="p-2 flex gap-x-2">
-            <img class="flex-frow-1" src="img/logo_2.png" alt="Ankadmin Logo" width="125" height="125">
-            <ul class="flex-grow-1 border-2">
+            <img src="img/logo3.png" alt="Ankadmin Logo" width="125" height="125">
+            <ul class="flex-grow-1">
                 <li> <a href=" #">Home</a>
                 </li>
                 <li> <a href=" #">Courses</a>
@@ -599,9 +614,9 @@
                 </li>
             </ul>
 
-            <div class="flex-grow grid border-2 justify-items-end">
-                <div class="flex grid border-2 justify-items-center">
-                    <div class="flex flex-end border-2 items-end ">
+            <div class="flex-grow grid justify-items-end">
+                <div class="flex grid justify-items-center">
+                    <div class="flex flex-end items-end ">
                         <a href="#!" class="mr-3 text-gray-800">
                             <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f"
                                 class="svg-inline--fa fa-facebook-f w-2.5" role="img" xmlns="http://www.w3.org/2000/svg"
@@ -645,7 +660,7 @@
                     </div>
                 </div>
 
-                <div class="flex border-2 items-end">
+                <div class="flex items-end">
 
                     <p class="text-xs">© 2022 Ankademin, Inc.</p>
                 </div>
