@@ -4,10 +4,3 @@
     grid-row: auto;
     gap: 1rem;
 }
-
-@mixin refCols($cols) {
-    display: grid;
-    grid-template-columns: repeat($cols, minmax(0, 1fr));
-    gap: 1rem;
-    grid-row: auto;
-}

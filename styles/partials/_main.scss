@@ -30,19 +30,11 @@
     .contentGrid {
         @include flexCenter(2)
     }
-
-    .productGrid {
-        @include flexCenter(3)
-    }
 }
 
 
 @media (max-width: 640px) {
     .contentGrid {
-        @include flexCenter(1)
-    }
-
-    .productGrid {
         @include flexCenter(1)
     }
 
