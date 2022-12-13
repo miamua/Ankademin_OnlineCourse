@@ -45,6 +45,14 @@ input[type=radio] {
   background-color: white;
 }
 
+.insideContent2 {
+  border: 2px solid #f97316;
+  border-radius: 12px;
+  padding: 8px;
+  margin: 12px;
+  background-color: #fef9c3;
+}
+
 @media (min-width: 640px) {
   .contentGrid {
     display: grid;
@@ -61,6 +69,12 @@ input[type=radio] {
     gap: 1rem;
   }
 }
+.star {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #991b1b;
+}
+
 nav .dropdown:hover .dropdown-content {
   display: block;
 }

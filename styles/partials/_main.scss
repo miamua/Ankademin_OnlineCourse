@@ -26,6 +26,15 @@
 
 }
 
+.insideContent2 {
+    border: 2px solid $ankademinOrange;
+    border-radius: 12px;
+    padding: 8px;
+    margin: 12px;
+    background-color: $bgContent1;
+
+}
+
 @media (min-width: 640px) {
     .contentGrid {
         @include flexCenter(2)
@@ -38,4 +47,10 @@
         @include flexCenter(1)
     }
 
+}
+
+.star {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: $ankademinRed;
 }
