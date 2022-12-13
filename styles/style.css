@@ -17,6 +17,10 @@ body {
   justify-content: space-between;
 }
 
+input[type=radio] {
+  accent-color: orange;
+}
+
 .content {
   border: 2px solid #f97316;
   border-radius: 24px;
